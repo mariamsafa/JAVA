@@ -43,8 +43,7 @@ public class javaclass {
         box b1 = new box(1);// passing the value while creating an object because its a constructor.
         
          * if "public void box(int initializewidth) " then the box() function will not
-         * be counted as a constructor cz it has a return type
-         * void. for that the code will be
+         * be counted as a constructor cz it has a return type void. for that the code will be
          * "box b1= new box();
          * b1.box(1);"
          
@@ -122,11 +121,10 @@ class javaclass {
 }
 
  /* 
-  * using static in a class method, we can call the method
+   using static in a class method, we can call the method
   without creating any object of the class.
   */
 
- 
 //method overloading
 /* class javaclass {
     private static void display(int a) {
@@ -147,47 +145,108 @@ class javaclass {
 
 } */
 
+/*create a vehicle class. This class must have two member variables and one member function.
+This class must have two child classes. Both of the child classes must have one member variable and function
+and must override the function from the parent class. Implement the code using c++.*/
+/*
+#include <iostream>
+using namespace std;
 
-//different type of constructor
-class Box 
-{
-    double width,height,depth;
-    Box()
-    {
-        System.out.println("Default");
-        width=2;
-        height=3;
-        depth=4;
-    }
-    Box(double width,double height,double depth)
-    {
-        System.out.println("Parameterized");
-        this.width = width;
-        this.height = height;
-        this.depth = depth;
-    }
-    Box(Box p)
-    {
-        System.out.println("Copy");
-        width = p.width;
-        height = p.height;
-        depth = p.depth;
-    }
-    double volume()
-    {
-        return width*height*depth;
-    }
-}
-class javaclass
-{
-    public static void main(String [] args)
-    {
-        Box b1 = new Box();
-        Box b2 = new Box(10,10,20);
-        Box b3 = new Box(b1);
-        Box b4 = b3; //reference of b3 assigned to b4
-        double v = b4.volume();
-        System.out.println(v);
-    }
-}
 
+class Vehicle {
+  public:
+    int wheels;
+    int speed;
+    void drive() {
+      cout << "Driving the vehicle" << endl;
+    }
+};
+
+class Car : public Vehicle {
+  public:
+    string carr;
+    void drive() {
+      cout << "D riving the car" <<endl;
+    }
+};
+
+class Motorcycle : public Vehicle {
+  public:
+    string bike;
+    void drive() {
+      cout << "Riding the motorcycle" <<endl;
+    }
+};
+int main() {
+
+
+    Car gari;
+    Vehicle garii;
+    Motorcycle gariii;
+    garii.drive();
+    gari.drive();
+    gariii.drive();
+
+    return 0;
+}
+*/
+
+#include <iostream>
+using namespace std;
+
+
+class Time{
+  public:
+    int hours;
+    int minute;
+    int seconds;
+
+    Time(int a , int b, int c){
+        hours=a;
+        minute=b;
+        seconds=c;
+    }
+
+    Time(){
+        hours=10;
+        minute=50;
+        seconds=20;
+    }
+
+
+    Time add_time(Time a, Time b){
+       Time c;
+       c.hours=a.hours+b.hours;
+       c.minute= a.minute+b.minute;
+       c.seconds=a.seconds+ b.seconds;
+
+       c.minute+=c.seconds/60;
+       c.seconds=c.seconds%60;
+
+       c.hours+=c.minute/60;
+       c.minute=c.minute%60;
+
+       return c;
+
+
+    }
+
+    void display()
+    {
+        cout<<hours<<":"<<minute<<":"<<seconds<<endl;
+    }
+
+};
+
+int main()
+{
+
+    Time one(2,55,40);
+    Time two(5,20,30);
+    Time three;
+    three=three.add_time(one, two);
+    three.display();
+
+
+
+}
