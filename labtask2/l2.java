@@ -22,28 +22,43 @@ class shape {
 }
 
 class circle extends shape {
+    void getPerimeter() {
 
-    void showper() {
-        getPerimeter();
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the radius : ");
+        r = input.nextDouble();
         System.out.println("perimeter is " + 2 * pi * r);
 
     }
 
-    void showarea() {
-        getarea();
-        System.out.println("Area is " + 2 * pi * r*r);
+    void getarea() {
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the radius : ");
+        r = input.nextDouble();
+        System.out.println("Area is " + 2 * pi * r * r);
 
     }
+    // void showper() {
+    // getPerimeter();
+    // System.out.println("perimeter is " + 2 * pi * r);
+
+    // }
+
+    // void showarea() {
+    // getarea();
+    // System.out.println("Area is " + 2 * pi * r * r);
+
+    // }
 
 }
-
 
 class l2 {
 
     public static void main(String args[]) {
         circle ob1 = new circle();
-        ob1.showper();
-        ob1.showarea();
+        ob1.getPerimeter();
+        ob1.getarea();
 
     }
 

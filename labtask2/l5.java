@@ -1,4 +1,3 @@
-
 class employee {
 
     String name, address, jobtitle;
