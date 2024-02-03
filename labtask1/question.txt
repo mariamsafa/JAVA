@@ -1,0 +1,70 @@
+1. Create a class called Reverse. This class must include one integer variable, one getInput ()
+function, and one doReverse() function. Your task is to take an integer input from the
+keyboard using the getInput() function and reverse it through doReverse() function. Create
+necessary constructors.
+
+
+2. Create a class named Complex that must have two integer data members (real, and imag).
+Create two constructors, one Read function to take keyboard input, one Add (return object),
+function, and one Display function to print results. The Add function must take one object
+as an argument. Watch the input and output section for better understanding.
+Input
+Enter real and imaginary numbers respectively: 16 7
+Enter real and imaginary numbers respectively: 5 8
+Output:
+Sum = 21 + 15i
+
+
+
+3. Suppose, you work in a Box manufacturing company. Your task is to ensure the size of the
+boxes before being delivered to the clients. Boxes must be 10 meters in length, 12 meters
+in width, and 8 meters long in height. Now, you are assigned to test whether all the
+properties are matched with the required/allotted values. If not, then increment or
+decrement the values where necessary. For example, if the length is 9 meters, then
+increment it by 1 or if the height is 10 meters, decrement it by 2. You must perform these
+operations with the help of Box objects.
+
+
+4. Suppose you want to create a cloud storage service (e.g. google drive) named ‘Drive49’,
+which has a Total_capacity of 10GB (in which there are two portions Used and Free). Each
+time a new user creates an account to your service a new storage is constructed for the user.
+For a new user Used portion should be assigned to zero and Free portion should be assigned
+to 10. A user can Upload a file of a certain Size to his ‘Drive49’ storage. Uploading a file
+will increase the Used portion by the Size of the file and decrease the Free portion by the
+same amount of space. A user can extend the Total_capacity of his ‘Drive49’ by upgrading
+(Upgrade) his user plan. He can also View the status of his storage (Total_capacity, Used,
+Free). Now show the process of creating your ‘Drive49’ service and a User of the service.
+Also create a user and upgrade the used plan and finally show that users status.
+
+
+
+5. Create a class named Time that must have three integer data members (hours, minutes, and
+seconds). Create two constructors, one member function named add_time (return object),
+and one display function to print the time in 11:59:59 format. The add_time function must
+take two objects as arguments. The main function calls the add_time function to add two-
+time objects and store the result in a third object. Use the display function to print the result
+on the console.
+Input: 2 55 40, 5 20 30
+Output: 8:16:10
+
+
+6. You and your friends are going to order food from FoodPanda. You have to choose your
+food items. You are asked to write a function called Orderfood () which takes the name of
+foods and number of items as the arguments. The name and number of food items may
+vary from two to four and from person to person. Complete the task using function
+overloading concept.
+
+
+7. Create a class named Football having data member radius and weight as integer type. A
+member function display() is used to show the values of radius and weight. A
+parameterized constructor is used to initialize the values of radius and weight. If no value
+is given while creating an object then, initialize the value of radius to 1 and weight to 2.
+Now create two objects ob1(10,20) and ob2 and show the values of radius and weight of
+the objects. Also mention the output.
+
+
+
+8. Create a class called Palindrome. This class must include one integer variable, one
+getInput () function, and one isPallindrome() function. Your task is to take an integer input
+from the keyboard and check whether it is palindrome or not. Create necessary
+constructors.
