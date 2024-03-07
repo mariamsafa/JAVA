@@ -102,6 +102,8 @@
 //        System.out.println("ob1 and ob3: "+ob1.equals(ob3));
 //     }
 // }
+
+//passing object
 // class Sum
 // {
 //    int value;
@@ -131,7 +133,8 @@
 //       s2.add(7);
 //     }
 // }
-
+//
+//returning object
 // class Sum
 // {
 //    int value;
@@ -280,7 +283,11 @@
 //         subob.sum();
 //         System.out.println("Total is: "+subob.total);
 //     }
-// }class Animal
+// }
+
+
+//constructors in inheritance
+//  class Animal
 // {
 //     int a;
 //     Animal()

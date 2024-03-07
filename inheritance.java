@@ -88,6 +88,7 @@ class Dog extends Animal {
     int b;
 
     Dog() {
+       
         System.out.println("Dog Constructor");
     }
 
@@ -133,11 +134,16 @@ class crow extends puppy {
 
 class inheritance {
     public static void main(String args[]) {
-        Animal a = new Animal(10);
-        Dog d = new Dog(10);
-        puppy r = new puppy(2);
-        crow q = new crow();
-
+                Animal a = new Animal(10);
+                System.out.println();
+                Dog d = new Dog(10);
+                System.out.println();
+        
+                puppy r = new puppy(2);
+                System.out.println();
+        
+                crow q = new crow();
+                System.out.println();
     }
 }
 

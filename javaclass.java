@@ -191,62 +191,62 @@ int main() {
 }
 */
 
-#include <iostream>
-using namespace std;
 
 
-class Time{
-  public:
-    int hours;
-    int minute;
-    int seconds;
+// };
 
-    Time(int a , int b, int c){
-        hours=a;
-        minute=b;
-        seconds=c;
-    }
+// int main()
+// {
 
-    Time(){
-        hours=10;
-        minute=50;
-        seconds=20;
-    }
+//     Time one(2,55,40);#include <iostream>
+// using namespace std;
 
 
-    Time add_time(Time a, Time b){
-       Time c;
-       c.hours=a.hours+b.hours;
-       c.minute= a.minute+b.minute;
-       c.seconds=a.seconds+ b.seconds;
+// class Time{
+//   public:
+//     int hours;
+//     int minute;
+//     int seconds;
 
-       c.minute+=c.seconds/60;
-       c.seconds=c.seconds%60;
+//     Time(int a , int b, int c){
+//         hours=a;
+//         minute=b;
+//         seconds=c;
+//     }
 
-       c.hours+=c.minute/60;
-       c.minute=c.minute%60;
-
-       return c;
-
-
-    }
-
-    void display()
-    {
-        cout<<hours<<":"<<minute<<":"<<seconds<<endl;
-    }
-
-};
-
-int main()
-{
-
-    Time one(2,55,40);
-    Time two(5,20,30);
-    Time three;
-    three=three.add_time(one, two);
-    three.display();
+//     Time(){
+//         hours=10;
+//         minute=50;
+//         seconds=20;
+//     }
 
 
+//     Time add_time(Time a, Time b){
+//        Time c;
+//        c.hours=a.hours+b.hours;
+//        c.minute= a.minute+b.minute;
+//        c.seconds=a.seconds+ b.seconds;
 
-}
+//        c.minute+=c.seconds/60;
+//        c.seconds=c.seconds%60;
+
+//        c.hours+=c.minute/60;
+//        c.minute=c.minute%60;
+
+//        return c;
+
+
+//     }
+
+//     void display()
+//     {
+//         cout<<hours<<":"<<minute<<":"<<seconds<<endl;
+//     }
+//     Time two(5,20,30);
+//     Time three;
+//     three=three.add_time(one, two);
+//     three.display();
+
+
+
+// }

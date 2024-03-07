@@ -38,7 +38,7 @@ class constructor {
         Box b1 = new Box();
         Box b2 = new Box(10, 10, 20);
         Box b3 = new Box(b1);
-        Box b4 = b3; // reference of b3 assigned to b4
+        Box b4 = b2; // reference of b3 assigned to b4
         double v = b4.volume();
         System.out.println(v);
     }

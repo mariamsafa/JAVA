@@ -1,31 +1,31 @@
 
-// // abstract class and abstract method
-// abstract class Vehicle
-// {
-//   abstract void show();
-//     void display()
-//     {
-//         System.out.println("Vehicle");
-//     }
+// abstract class and abstract method
+abstract class Vehicle
+{
+  abstract void show();
+    void display()
+    {
+        System.out.println("Vehicle");
+    }
     
-// }
-// class Car extends Vehicle 
-// {
-//     void show()
-//     {
-//         System.out.println("Car");
-//     }
-// }
+}
+class Car extends Vehicle 
+{
+    void show()
+    {
+        System.out.println("Car");
+    }
+}
 
-// class abstraact
-// {
-//     public static void main(String args[])
-//     {
-//         Car v = new Car();
-//         v.show();
-//         v.display();
-//     }
-// }
+class abstraact
+{
+    public static void main(String args[])
+    {
+        Car v = new Car();
+        v.show();
+        v.display();
+    }
+}
 
 // abstract class Language {
 
@@ -51,43 +51,3 @@
 
 
 
-
-//Interface 
-interface Vehicle
-{
-   void SpeedUp(int a);
-   void SpeedDown(int a);
-}
-class Car implements Vehicle 
-{
-   int speed;
-   Car(int speed)
-   {
-       this.speed = speed;
-   }
-   public void SpeedUp(int a)
-   {
-       speed += a;
-       System.out.println("Speed of car: "+speed);
-   }
-   public void SpeedDown(int a)
-   {
-       speed -= a;
-       System.out.println("Speed of car: "+speed);
-   }
-}
-
-class abstraact
-{
-    public static void main(String args[])
-    {
-        Vehicle v = new Car(10);
-        v.SpeedUp(4);
-        v.SpeedDown(2);
-        
-        Car c = new Car(12);
-        c.SpeedUp(3);
-        c.SpeedDown(1);
-        
-    }
-}
