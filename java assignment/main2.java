@@ -60,9 +60,9 @@ class ElectricCargoBicycle extends CargoBicycle implements Electrified {
     }
 
     public double getCurrentCharge() {
-        System.out.println("Enter getCurrentCapacity :");
+        System.out.println("Enter getCurrentCharge :");
         Scanner input = new Scanner(System.in);
-        getCurrentCharge = input.nextInt();
+        getCurrentCharge = input.nextDouble();
         return getCurrentCharge;
 
     }
@@ -97,7 +97,7 @@ class ElectricBicycle extends Bicycle implements Electrified {
     }
 
     public double getCurrentCharge() {
-        System.out.println("Enter getCurrentCapacity :");
+        System.out.println("Enter getCurrentcharge :");
         Scanner input = new Scanner(System.in);
         getCurrentCharge = input.nextInt();
         return getCurrentCharge;
@@ -119,7 +119,7 @@ class main2 {
         int a = ob1.getChargeCapacity();
         System.out.println(" getChargeCapacity :" + a);
         double b = ob1.getCurrentCharge();
-        System.out.println(" getCurrentCapacity :" + b);
+        System.out.println(" getCurrentCharge:" + b);
         ob1.setCurrentCharge(2);
 
         ElectricBicycle ob2 = new ElectricBicycle(40, 50);
@@ -127,7 +127,7 @@ class main2 {
         int c = ob1.getChargeCapacity();
         System.out.println(" getChargeCapacity :" + c);
         double d = ob1.getCurrentCharge();
-        System.out.println(" getCurrentCapacity :" + d);
+        System.out.println(" getCurrentCharge :" + d);
         ob1.setCurrentCharge(4);
 
     }
