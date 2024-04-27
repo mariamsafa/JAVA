@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class java1 {
   public static void main(String args[]){
     Scanner input= new Scanner(System.in);
-    String word= input.next();
+    
     input.nextLine(); //it takes the enter as input
     String line= input.nextLine();
     int num= input.nextInt();
