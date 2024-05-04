@@ -1,0 +1,11 @@
+1. Program to Check Two Strings Are Anagram Of Each Other in Java.
+2. Java String Program to Print Even-Length Words.
+3. Java String Program to Replace a Character at a Specific Index.
+4. Write a program to check if the word 'orange' is present in the "This is orange juice".
+5. Write a Java program to compare a given string to another string, ignoring case
+considerations.
+6. Write a Java program to compare two strings lexicographically. Two strings are
+lexicographically equal if they are the same length and contain the same characters in the
+same positions.
+7. Write a Java program to find the length of the longest substring of a given string without
+repeating characters.
