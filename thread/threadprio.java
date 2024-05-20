@@ -6,8 +6,12 @@ class safa extends Thread {
     }
 
     public void run() {
+        while (true) {
+            System.out.println("hello" + this.getName());
+           
+        }
       
-        System.out.println("hello" + this.getName());
+        
       
             
         
