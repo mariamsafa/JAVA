@@ -1,11 +1,10 @@
-package File Manipulation;
 
-public // //File Creation and Writing
+ //File Creation and Writing
 // import java.io.File;
 // import java.io.FileWriter;
 // import java.io.IOException;
 
-// public class test {
+// public class files {
 //     public static void main(String[] args) {
 //         try{
 //             File myfile = new File("testfile.txt");
@@ -20,6 +19,8 @@ public // //File Creation and Writing
 //             writer.close();
 
 //             System.out.println("Successfully Written");
+
+            
 //         } catch (IOException e){
 //             System.out.println("An error occured");
 //             e.printStackTrace();
@@ -32,7 +33,7 @@ public // //File Creation and Writing
 // import java.io.FileReader;
 // import java.io.IOException;
 
-// public class test {
+// public class files {
 //     public static void main(String[] args) {
 //         try{
 //             FileReader reader = new FileReader("testfile.txt");
@@ -50,12 +51,12 @@ public // //File Creation and Writing
 
 
 
-// //File Reading using Scanner
+//File Reading using Scanner
 // import java.io.File;
 // import java.io.IOException;
 // import java.util.Scanner;
 
-// public class test {
+// public class files {
 //     public static void main(String[] args) {
 //         try {
 //             File myfile = new File("testfile.txt");
@@ -97,12 +98,12 @@ public // //File Creation and Writing
 
 
 
-// //Buffered Reader
+//Buffered Reader
 // import java.io.BufferedReader;
 // import java.io.FileReader;
 // import java.io.IOException;
 
-// public class test {
+// public class files {
 //     public static void main(String[] args) {
 //         try {
 //             FileReader myfile = new FileReader("testfile.txt");
@@ -121,12 +122,12 @@ public // //File Creation and Writing
 
 
 
-// //BufferedWriter
+//BufferedWriter
 // import java.io.FileWriter;
 // import java.io.BufferedWriter;
 // import java.io.IOException;
 
-// public class test{
+// public class files{
 //     public static void main(String[] args) {
 //         try{
 //             FileWriter myfile = new FileWriter("testfile.txt");
@@ -149,12 +150,12 @@ public // //File Creation and Writing
 
 
 
-// //Word Count
+//Word Count
 // import java.io.BufferedReader;
 // import java.io.FileReader;
 // import java.io.IOException;
 
-// public class test {
+// public class files {
 //     public static void main(String[] args) {
 //         try {
 //             FileReader myfile = new FileReader("testfile.txt");
@@ -178,28 +179,28 @@ public // //File Creation and Writing
 
 
 
-// //Character Count
-// import java.io.BufferedReader;
-// import java.io.FileReader;
-// import java.io.IOException;
+//Character Count
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
-// public class test {
-//     public static void main(String[] args) {
-//         try {
-//             FileReader myfile = new FileReader("testfile.txt");
-//             BufferedReader br = new BufferedReader(myfile);
+public class test {
+    public static void main(String[] args) {
+        try {
+            FileReader myfile = new FileReader("testfile.txt");
+            BufferedReader br = new BufferedReader(myfile);
 
-//             String i;
-//             int charCount = 0;
-//             while ((i = br.readLine()) != null) {
-//                 charCount += i.length();
-//             }
-//             System.out.println("Total alphanumeric characters: " + charCount);
-//         } catch (IOException e) {
-//             System.out.println("An error occurred");
-//             e.printStackTrace();
-//         }
-//     }
-// } {
+            String i;
+            int charCount = 0;
+            while ((i = br.readLine()) != null) {
+                charCount += i.length();
+            }
+            System.out.println("Total alphanumeric characters: " + charCount);
+        } catch (IOException e) {
+            System.out.println("An error occurred");
+            e.printStackTrace();
+        }
+    }
+} 
     
-}
+
